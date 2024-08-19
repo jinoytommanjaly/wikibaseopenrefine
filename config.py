@@ -6,15 +6,15 @@ should be used
 """
 
 # Endpoint of the MediaWiki API of the Wikibase instance
-mediawiki_api_endpoint = 'https://shira.wikibase.cloud/w/api.php'
+mediawiki_api_endpoint = 'https://opendatakerala.wikibase.cloud/w/api.php'
 
 # SPARQL endpoint
-wikibase_sparql_endpoint = 'https://shira.wikibase.cloud/query/'
+wikibase_sparql_endpoint = 'https://opendatakerala.wikibase.cloud/query/sparql'
 # Name of the Wikibase instance
-wikibase_name = 'ShiraWikibase.cloud'
+wikibase_name = 'opendatakerala.cloud'
 
 # URL of the main page of the Wikibase instance
-wikibase_main_page = 'https://shira.wikibase.cloud/wiki/Main_Page'
+wikibase_main_page = 'https://opendatakerala.wikibase.cloud/wiki/Main_Page'
 
 # Wikibase namespace ID, used to search for items
 # For Wikidata this is 0, but most by default Wikibase uses 120, which is the default Wikibase 'Item:' namespace
@@ -39,13 +39,13 @@ p_re_group_id = 3
 # This should match the IRI prefixes used in RDF serialization. For instance: https://shira.wikibase.cloud/wiki/Special:EntityData/Q10.rdf 
 # Note that you should be careful about using http or https there,
 # because any variation will break comparisons at various places.
-identifier_space = 'https://shira.wikibase.cloud/entity/'
-schema_space = 'https://shira.wikibase.cloud/prop/direct/'
+identifier_space = 'https://opendatakerala.wikibase.cloud/entity/'
+schema_space = 'https://opendatakerala.wikibase.cloud/prop/direct/'
 
 
 # Pattern used to form the URL of a Qid.
 # This is only used for viewing so it is fine to use any protocol (therefore, preferably HTTPS if supported)
-qid_url_pattern = 'https://shira.wikibase.cloud/wiki/Item:{{id}}'
+qid_url_pattern = 'https://opendatakerala.wikibase.cloud/wiki/Item:{{id}}'
 
 # By default, filter out any items which are instance
 # of a subclass of this class.
@@ -57,7 +57,7 @@ avoid_items_of_class = None
 
 # Service name exposed at various places,
 # mainly in the list of reconciliation services of users
-service_name = 'shira.cloud recon service'
+service_name = 'opendatakerala.cloud recon service'
 
 # URL (without the trailing slash) where this server runs
 this_host = 'http://localhost:8000'
@@ -116,8 +116,8 @@ autodescribe_endpoint = 'https://tools.wmflabs.org/autodesc/'
 default_type_entity = None
 
 # Property path used to obtain the type of an item
-# https://shira.wikibase.cloud/wiki/Property:P39
-type_property_path = 'P39' 
+# https://opendatakerala.wikibase.cloud/wiki/Property:P2
+type_property_path = 'P2' 
 
 # Property to follow to fetch properties for a given type.
 # Set to None if this is not available
